@@ -54,15 +54,15 @@ try {
     // }));    
 
     app.get('/', (req, res) => {
-        res.sendFile(resolve('./views/index.html'));
+        res.sendFile(resolve('./src/views/index.html'));
     });
 
-    app.use('/', express.static('./views'));
+    app.use('/', express.static('./src/views'));
 
-    app.use('/assets', express.static('./views/assets'));
+    app.use('/assets', express.static('./src/views/assets'));
 
     // Failų direktorijos priėjimo priskyrimas
-    app.use('/photos', express.static('./uploads'));
+    app.use('/photos', express.static('./src/uploads'));
 
     // Controllerio priskyrimas prie express'o
     app.use('/api/video', video);
