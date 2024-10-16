@@ -20,7 +20,7 @@ try {
     // Prisijungimas prie duomenų bazės
     await mongoose.connect(config.MONGO_URL);
 
-    console.log('Connected!')
+    console.log('Sėkmingai prisijungta!')
 
     // Kategorijų sukūrimas
 
